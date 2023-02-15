@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Text Editor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-slate-400">
+    <h1 class="text-3xl text-center mt-6 py-2 font-semibold">My Text Editor</h1>
+    <section class="mt-2 bg-slate-200 w-3/4 mx-auto p-8 rounded border-2 border-slate-700">
+        <div class="grid grid-cols-3 gap-4">
+            <div>
+               <button id="btn-bold"><i class="fa-solid fa-bold px-4"></i></button>
+                <button id="btn-italic"><i class="fa-solid fa-italic px-4"></i></button>
+                <button id="btn-underline"><i class="fa-solid fa-underline px-4"></i></button>
+            </div>
+
+            <div class="">
+                <button id="align-left"><i class="fa-solid fa-align-left px-4"></i></button>
+                <button id="align-center"><i class="fa-solid fa-align-center px-4"></i></button>
+                <button id="align-right"><i class="fa-solid fa-align-right px-4"></i></button>
+            </div>
+
+            <div>
+                <input type="number" name="" id="number-field" class="w-10">
+                <span class="px-4 font-semibold">aA</span>
+                <input type="color" name="" id="color-field">
+            </div>
+        </div>
+        <div class="border border-slate-700 m-5">
+            <hr>
+        </div>
+        <div>
+           <textarea name="" id="textarea-field" class="ml-2 w-full h-[200px]" ></textarea>
+        </div>
+
+    </section>
+    
+    <script src="js/editor.js"></script>
+</body>
+</html>
